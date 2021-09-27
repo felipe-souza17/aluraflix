@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Roboto Mono", monospace;
@@ -99,11 +100,15 @@ nav a, p , i, img {
   background: linear-gradient(0deg, rgba(20,20,20,1) 40%, rgba(255,255,255,0) 100%);
 }
 
-/* Section/Series */
+/* Section / Series / Movies / My List */
 .series {
   top: -100px;
   position: relative;
   background: linear-gradient(0deg, rgba(20,20,20,1) 70%, rgba(255,255,255,0) 100%);
+}
+#movies-section {
+  top: -50px;
+  position: relative;
 }
 .recomendation {
   color: #ffffff;
@@ -135,6 +140,13 @@ nav a, p , i, img {
   width: 175px;
   object-fit: cover;
 }
+#my-list {
+  top: -50px;
+  position: relative;
+  margin: 50px 0;
+}
+
+/* Scrollbar Style */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -153,48 +165,26 @@ nav a, p , i, img {
   border-radius: 15px; 
 }
 
-.container {
-  text-align: center;
-  padding: 20px;
-}
-
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
-.page-subtitle {
-  color: #ffffff;
-  margin-top: 5px;
-}
-
-.page-logo {
-  width: 200px;
-  
-}
-
 .alura-logo {
   width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  margin: 10px;
 }
 
-
-
-
-
-/* Handle on hover */
-
-
+/* Handle on hover / Button  */
 .form-wrapper {
-  margin: 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  margin: 15px auto;
 }
 
 .form-wrapper input {
-  display: block;
   margin: 0 auto;
   padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: 0;
 }
 
 .form-wrapper button {
