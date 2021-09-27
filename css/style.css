@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #141414;
+  color: #ffffff;
+} a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Header / Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  padding: 15px 0;
+  z-index: 1;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.header-color {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 39%, rgba(10,10,10,1) 100%);
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+.nav-content img {
+  height: 45px;
+  width: 155px;
+  object-fit: cover;
+}
+nav a, p , i, img {
+  margin: 0 10px;
+}
+.user-account {
+  display: flex;
+  align-items: center;
+}
+.user-account img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Section / Trailer */
+.featured-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.demon-trailer {
+  opacity: 0.4;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  
+}
+.trailer-about {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 15px;
+}
+.trailer-logo img {
+  height: 268px;
+  width: 294px;
+  object-fit: cover;
+}
+.description-trailer {
+  margin: 20px 0;
+  font-size: 20px;
+}
+.buttons-trailer button {
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  font-weight: bold;
+}
+.buttons-trailer button:nth-child(even) {
+  background-color: gray;
+  color: white;
+}
+.vignette {
+  height: 250px;
+  width: 100%;
+  
+  background: linear-gradient(0deg, rgba(20,20,20,1) 40%, rgba(255,255,255,0) 100%);
+}
+
+/* Section/Series */
+.series {
+  top: -100px;
+  position: relative;
+  background: linear-gradient(0deg, rgba(20,20,20,1) 70%, rgba(255,255,255,0) 100%);
+}
+.recomendation {
+  color: #ffffff;
+  text-align: start;
+}
+#items-wrapper, #user-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#items, #user-movies {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+#items {
+  overflow-y: hidden;
+}
+.item {
+  pointer-events: none;
+}
+
+.movie-item {
+  height: 250px;
+  margin: 10px;
+  width: 175px;
+  object-fit: cover;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 15px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px; 
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+  
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+
+
+/* Handle on hover */
+
+
+.form-wrapper {
+  margin: 0 0 15px;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.form-wrapper button {
+  border: 0;
+  color: #ffffff;
+  background: #da1e26;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+  opacity: 0.8;
+}

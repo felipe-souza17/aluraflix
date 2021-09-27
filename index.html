@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Aluraflix - dia 5</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  
+
+  <script src="https://kit.fontawesome.com/bfb7599492.js" crossorigin="anonymous"></script>
+  
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <img src="assets/img/aluraflix-logo.png" alt="Aluraflix logo" id="start">
+      <a href="#start">Início</a>
+      <a href="#series">Séries</a>
+      <a>Filmes</a>
+      <a>Bombando</a>
+      <a>Minha lista</a>
+
+    </div>
+    <div class="user-account">
+
+      <i class="fas fa-search"></i>
+      <p>Infantil</p>
+      <i class="fas fa-bell"></i>
+
+      <img src="assets/img/Netflix-avatar.png" alt="User Icon">
+    </div>
+  </nav>
+  <section class="featured-movie">
+    <video autoplay loop class="demon-trailer" id="movie-trailer">
+      <source src="assets/video/trailer-demon.mp4">
+    </video>
+    <div class="trailer-about">
+      <div class="trailer-logo">
+        <img src="assets/img/demon-slayer-logo.png" alt="Logo do trailer">
+      </div>
+      <div class="description-trailer">
+        <p>Demônios massacraram sua família e amaldiçoaram sua irmã. Agora Tanjiro inicia sua jornada para encontrar a cura e se vingar.</p>
+      </div>
+      <div class="buttons-trailer">
+        <button class="btn-play"><i class="fas fa-play"></i>Assistir</button>
+        <button class="btn-more-information"><i class="fas fa-info-circle"></i>Mais Informações</button>
+      </div>
+    </div>
+    
+  </section>
+  <section class="series" id="series">
+    <div id="items-wrapper">
+    <h2 class="recomendation">Séries:</h2>
+    <div id="items">
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i0uajcHH9yogXMfDHpOXexIukG9.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yVUAfbrP5HDJugXraB7KQS0yz6Z.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hdKxcoV5CFc3sGOmbGXDXbx1cTZ.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cK6JhcZFpwVW9tldz3llodY2TeY.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/oktTNFM8PzdseiK1X0E0XhB6LvP.jpg">
+      </div>
+      <div class="item">
+        <img class="movie-item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/q6Iy4FRCpOX3J5o0WfmtcypwLvt.jpg">
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--<a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>-->
+  <!--
+  <div class="container">
+    <h1 class="page-title">
+      Aluraflix
+    </h1>
+    
+    <p class="page-subtitle">
+      Qual seu filme favorito?
+    </p>
+    <div class="form-wrapper">
+      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+      <button onClick="addMovie()">Adicionar Filme</button>
+      <button onClick="removeMovie()">Remover Filme</button>
+    </div>
+  </div>
+
+  
+  </div>
+  <div id="user-list">
+    <h2 class="recomendation">Minha Lista</h2>
+    <div id="user-movies">
+
+    </div>
+  </div>
+  <div id="listaFilmes"></div>
+-->
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
