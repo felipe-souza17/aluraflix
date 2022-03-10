@@ -4,10 +4,11 @@
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   background-color: #141414;
   color: #ffffff;
-} a {
+}
+a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -20,14 +21,18 @@ body {
   justify-content: space-between;
   background: transparent;
   padding: 15px 0;
-  z-index: 1;
+  z-index: 3;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
 .header-color {
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 39%, rgba(10,10,10,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 39%,
+    rgba(10, 10, 10, 1) 100%
+  );
 }
 .nav-content {
   display: flex;
@@ -38,7 +43,10 @@ body {
   width: 155px;
   object-fit: cover;
 }
-nav a, p , i, img {
+nav a,
+p,
+i,
+img {
   margin: 0 10px;
 }
 .user-account {
@@ -63,7 +71,6 @@ nav a, p , i, img {
   width: 100%;
   height: auto;
   background-size: cover;
-  
 }
 .trailer-about {
   position: absolute;
@@ -96,15 +103,23 @@ nav a, p , i, img {
 .vignette {
   height: 250px;
   width: 100%;
-  
-  background: linear-gradient(0deg, rgba(20,20,20,1) 40%, rgba(255,255,255,0) 100%);
+
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 /* Section / Series / Movies / My List */
 .series {
   top: -100px;
   position: relative;
-  background: linear-gradient(0deg, rgba(20,20,20,1) 70%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 #movies-section {
   top: -50px;
@@ -114,12 +129,14 @@ nav a, p , i, img {
   color: #ffffff;
   text-align: start;
 }
-#items-wrapper, #user-list {
+.items-wrapper,
+#user-list {
   width: 90%;
   margin: 0 auto;
 }
 
-#items, #user-movies {
+.items,
+.user-movies {
   display: flex;
 
   overflow-x: auto;
@@ -127,7 +144,7 @@ nav a, p , i, img {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
-#items {
+.items {
   overflow-y: hidden;
 }
 .item {
@@ -139,6 +156,10 @@ nav a, p , i, img {
   margin: 10px;
   width: 175px;
   object-fit: cover;
+  border-radius: 10px;
+}
+.movie-info {
+  display: none;
 }
 #my-list {
   top: -50px;
@@ -155,14 +176,14 @@ nav a, p , i, img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-  border-radius: 15px; 
+  background: #f1f1f1;
+  border-radius: 15px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .alura-logo {
@@ -202,4 +223,134 @@ nav a, p , i, img {
 
 .form-wrapper button:hover {
   opacity: 0.8;
+}
+
+/* Tablet Version */
+@media screen and (max-width: 768px) {
+  .movie-info {
+    background-color: #1d1d1d;
+    padding: 10px 5px;
+    border-radius: 0 0 10px 10px;
+    width: 107px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -5px;
+    right: -10px;
+  }
+  .nav-content img {
+    width: 120px;
+    height: auto;
+  }
+  .nav-content a {
+    display: none;
+  }
+  .trailer-logo img {
+    width: 65%;
+    height: 100%;
+  }
+  .description-trailer {
+    font-size: 12px;
+  }
+  .buttons-trailer button {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  .series {
+    top: 0px;
+    z-index: 2;
+  }
+  #movies-section,
+  #my-list {
+    top: 0;
+    margin: 25px 0;
+  }
+  .movie-item {
+    height: 175px;
+    width: auto;
+    margin: 10px 10px 0px;
+    border-radius: 10px 10px 0 0;
+  }
+  .user-account p {
+    display: none;
+  }
+  .dark-gradient {
+    width: 100%;
+    height: 125px;
+    top: 350px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 1) 40%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .form-wrapper {
+    width: 35%;
+  }
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+}
+@media screen and (max-width: 425px) {
+  .featured-movie {
+    margin-bottom: 50px;
+  }
+  #items-wrapper h2 {
+    font-size: 15px;
+  }
+  .description-trailer {
+    display: none;
+  }
+  .trailer-logo {
+    text-align: center;
+  }
+  .trailer-logo img {
+    width: 75px;
+  }
+  .trailer-about {
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 110px;
+    top: 125px;
+    z-index: 2;
+  }
+  .buttons-trailer {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .genre {
+    text-align: center;
+    font-size: 12px;
+  }
+  .btn-more-information {
+    display: none;
+  }
+  .dark-gradient {
+    top: 150px;
+  }
+  .items-wrapper {
+    font-size: 10px;
+  }
+  .form-wrapper {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .trailer-logo img {
+    width: 50px;
+  }
+  .trailer-about {
+    right: 95px;
+    top: 125px;
+  }
+  .dark-gradient {
+    top: 140px;
+  }
+  .form-wrapper {
+    width: 75%;
+  }
 }
